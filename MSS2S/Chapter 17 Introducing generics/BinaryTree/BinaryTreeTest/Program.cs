@@ -12,6 +12,7 @@ namespace BinaryTreeTest
             tree1.Insert(5);
             tree1.Insert(11);
             tree1.Insert(5);
+            //tree1.Insert(5);
             tree1.Insert(-12);
             tree1.Insert(15);
             tree1.Insert(0);
