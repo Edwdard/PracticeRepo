@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -67,5 +68,15 @@ namespace BinaryTree
             return result;
         }
 
+        IEnumerator<TItem> IEnumerable<TItem>.GetEnumerator()
+        {
+            //throw new NotImplementedException();
+            return new TreeEnumerator<TItem>(this);
+        }
+
+        IEnumerator IEnumerable.GetEnumerator()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

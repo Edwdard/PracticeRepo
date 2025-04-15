@@ -46,7 +46,7 @@ namespace BinaryTree
         bool IEnumerator.MoveNext()
         {
             //throw new NotImplementedException();
-            if (this.currentData is null)
+            if (this.enumData is null)
             {
                 this.enumData= new Queue<TItem>();
                 populate(this.enumData,this.currentData);
