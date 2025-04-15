@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BinaryTree
 {
-    public class Tree<TItem> where TItem : IComparable<TItem>
+    public class Tree<TItem> : IEnumerable<TItem> where TItem : IComparable<TItem>
     {
         public TItem NodeData { get; set; }
         public Tree<TItem> LeftTree { get; set; }

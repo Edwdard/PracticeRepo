@@ -35,6 +35,8 @@ namespace BinaryTree
         }
 
         object IEnumerator.Current => throw new NotImplementedException();
+     
+
 
         void IDisposable.Dispose()
         {
